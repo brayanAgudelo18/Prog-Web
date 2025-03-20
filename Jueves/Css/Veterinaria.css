@@ -1,0 +1,143 @@
+.txheader{
+    background-color: hsl(120, 1%, 57%);
+    
+}
+.imgone{
+    width: 280px;
+    height: 250px;
+    margin-left: 200px;
+}
+body{
+    margin: 0%;
+    padding-top: 0%;
+}
+#txdireccion{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid  rgb(128, 126, 126);
+    width:350px ;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+    
+}
+#txtelefono{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    width:350px ;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+}
+#txnombre{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    width: 350px;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+}
+#txemail{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    width:350px ;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+}
+#txrazon{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126); 
+    width:350px ;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+}
+#txempleados{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    width:350px ;
+    outline: none;
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+    
+   
+   
+}
+#txfechaF{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    width:350px ;
+    outline: none;
+    
+    margin-left: 35%;
+    width: 800px;
+    padding: 20px;
+    
+}
+.onemainn{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 1px;
+    
+
+}
+.ul-list{
+    list-style-type: none;
+    font-weight: bold;
+    list-style-type: none;
+    border: 4px;
+}
+.nav-enlace{
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.enlacess{
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    width: 215px;
+    margin: 10px;
+    
+    
+}
+.tx-menu{
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 210px;
+}
+.clas{
+    margin: 60px;
+    align-items: center;
+}
+.footertx{
+    background-color: rgb(145, 147, 145);
+    border-top: none;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.footertx p {
+    margin: 50px;
+    padding: 20px;
+}
+.error{
+    background-color: red !important;
+}
+
+
+

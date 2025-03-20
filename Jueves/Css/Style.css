@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Neonderthaw-regular;
+    src: url(../Fuentes/Neonderthaw-Regular.ttf);
+}
+body{
+    padding-top: 0%;
+    margin: 0%;
+}
+footer{
+
+    margin: 0%;
+    padding-top: 0%;
+    padding: 10px;
+}
+.pietx{
+    padding: 5px;
+}
+.header-tx
+{
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: hsl(120, 1%, 57%); 
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+}   
+.img{
+    
+    margin-left: 120px;
+    height: 250px;
+    width: 280px;
+    padding: 0%;
+    
+}
+.onemain{
+    display: inline-flex;
+    justify-content: space-between;
+    
+}
+.navmain{
+    width: 300px;
+}
+
+.enlace{
+    font-weight: bold;
+    color: rgb(102, 0, 255);
+    list-style-type: none;
+    border: 4px;
+}
+.enlaces{
+    margin: 5px;
+    border: 2px solid black; 
+    text-align: center;
+    border-radius: 30px;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+}
+.letranav{
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-tx{
+    background-color:rgb(145, 147, 145) ;
+    margin: 0%;
+    padding: 5px;
+    text-align: center;
+}
+#txusuario{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    padding: 10px;
+}
+#txusuario::placeholder{
+    color: #ffffff;
+}
+#txpassword{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    padding: 10px;
+}
+#txpassword::placeholder{
+    color: #ffffff;
+}
+.txlogin{
+    margin: 70px;
+}
+.txingresar{
+    display: block;
+    align-content: center;
+}
+.loginbutton{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+   
+}
+.loginbutton:hover{
+    background-color: rgb(160, 160, 160);
+}
+.tittle-vete{
+    display: flex; 
+    text-align: center;
+    width: 65%;
+}    
+.tittle{
+    font-size: 4rem; 
+
+}
+
+
+
+
+
+
+
+
+
