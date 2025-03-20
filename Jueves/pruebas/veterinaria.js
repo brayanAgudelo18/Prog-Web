@@ -1,7 +1,7 @@
 function validarNit(){
     var elementoNit= $('#txnombre');
     var nit = $(elementoNit).val();
-    var expReg = /^[0-9]{1,9}/-/ld$/;
+    var expReg = /^[0-9]{9}\-\d$/;
     if(nit.length == 0 || !expReg.test(nit)) {
         $(elementoNit).addClass('error');
         return false;
@@ -10,7 +10,7 @@ function validarNit(){
 function validarNombre(){
     var elementoNombre= $('#txrazon');
     var nombre = $(elementoNombre).val();
-    var expReg = /^\[w\s]+$/;
+    var expReg = /^[\w\s]+$/;
     if(nombre.length == 0 || !expReg.test(nombre)) {
         $(elementoNombre).addClass('error');
         return false;
@@ -55,7 +55,7 @@ function validarEmpleados(){
 function validarFecha(){
     var elementoFecha= $('#txfechaF');
     var fecha = $(elementoFecha).val();
-     var expReg =/^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d\d$/;
+     var expReg = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d\d$/;
     if(fecha.length == 0 || !expReg.test(fecha)) {
         $(elementoFecha).addClass('error');
         return false;
