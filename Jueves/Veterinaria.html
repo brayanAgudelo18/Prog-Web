@@ -33,7 +33,7 @@
 
                 <div>
                     <label for="txnombre"></label>
-                    <input type="nombre" id="txnombre" name="txnombre" placeholder="NIT" onblur="validarNit()">
+                    <input type="text" id="txnombre" name="txnombre" placeholder="NIT" onblur="validarNit()">
                 </div>
                 <div>   
                     <label for="txrazon"></label>
@@ -58,6 +58,9 @@
                 <div>
                     <label for="txfechaF"></label>
                     <input type="text" id="txfechaF" name="txfechaF" placeholder="mm/dd/yyyy" onblur="validarFecha()">
+                </div>
+                <div>
+                    <button type="button" id="txsubmit" name="txsubmit" onclick="guardarVeterinaria()" onblur="guardarVeterinaria()" >submit</button>
                 </div>
     
             </div>

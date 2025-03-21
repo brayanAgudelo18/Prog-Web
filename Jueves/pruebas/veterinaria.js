@@ -62,5 +62,27 @@ function validarFecha(){
     } 
     
 }
+var veterinarias = new Array();
+function guardarVeterinaria(){
+    var veterinaria = new Object();
+    veterinaria.nombre =$('#txnombre').val();
+    veterinaria.direccion =$('#txdireccion').val();
+    veterinaria.telefono =$('#txtelefono').val();
+    veterinaria.razonsocial =$('#txrazon').val();
+
+    veterinarias.push(vetyerinaria);
+    alert ('veterinaria guardada con exito');
+    limpiarCampos();
+}
+function limpiarCampos(){
+     $('#txnombre').val('');
+     $('#txdireccion').val('');
+     $('#txtelefono').val('');
+     $('#txrazon').val('');
+
+}
+function mostrarVterinaria(){
+    
+}
 
 
