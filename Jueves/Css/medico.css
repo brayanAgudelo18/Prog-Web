@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Newsreader-Regular;
+    src: url(../Fonts/Newsreader_24pt-Regular.ttf);
+}
+:root {
+    --primary-color: hsl(120, 1%, 57%);
+    --secondary-color:aliceblue;
+    --third-color: rgb(235, 113, 121);
+    --fourth-color: rgb(134, 210, 205);
+}
+body{
+    display: block;
+    padding-top: 0%;
+    margin: 0%;
+    
+}
+.veterinaria_header {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: hsl(120, 1%, 57%); 
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+}
+.vet_logo{
+    height: 250px;
+    width: 280px;
+    padding: 0%;
+}
+.main_div {
+    display: inline-flex;
+    align-items: center;
+    justify-items:space-around;
+}
+.nav_div {
+    margin-right: 50px;
+    width: 250px;
+   
+}
+.pestañas-ul {
+    font-family: Newsreader-Regular;
+    font-size: 1.2rem;
+    list-style-type: none;
+    text-align: center;
+}
+.pestaña {
+    border: 2px solid black;
+    margin: 5px 2px 0px 0px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+.pestaña:hover{
+    border-color: black;
+    color: rgb(143, 142, 142);
+}
+.pestaña_link {
+    text-decoration: none;
+    color: black;
+}
+.pestaña_link:hover{
+    color: black;
+}
+.form {
+    padding-left: 200px;
+    width: 700px;
+}
+.txCmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+.txTmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+.txDmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+.txNmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 10px solid black; 
+    outline:none;
+}
+.txEmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+.txAmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 10px;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+.txFNmedico {
+    width:100%;
+    max-width: 300px;
+    padding: 20px;
+    border: 0;
+    border-bottom: 1px solid black; 
+    outline:none;
+}
+footer {
+    background-color: var(--primary-color);
+    color:aliceblue;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.form{
+    width: 100%;
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+.group{
+    flex: 1;
+    min-width: 220px;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    border-bottom: 1px solid var(--secondary-color);
+    box-sizing: border-box;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #13181d;
+    outline: none;
+}
+h3{
+    color: #626161;
+    font-size: 16px;
+   
+   
+}
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #751e1e;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow:  0 15px 20px #555;
+}
+.formtwo{
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: transparent;
+    padding: 1%;
+    border-radius: 8px;
+   
+    outline: none;
+}
+.containertwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-group {
+    background: transparent;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    cursor: pointer;  
+}
+label{
+    margin-bottom: 5px;
+}
+h5{
+    font-size: 25px;
+    text-align: center;
+}
+h1{
+    width: 100%;
+    max-width: 10000px;
+    text-align: center;
+}
+.error{
+    background-color: red;
+}
+

@@ -5,7 +5,8 @@
 .imgone{
     width: 280px;
     height: 250px;
-    margin-left: 200px;
+    margin-left:100px;
+    
 }
 body{
     margin: 0%;
@@ -14,7 +15,7 @@ body{
 #txdireccion{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid  rgb(128, 126, 126);
+    border-bottom: 1px solid  rgb(0, 0, 0);
     width:350px ;
     outline: none;
     margin-left: 35%;
@@ -25,7 +26,7 @@ body{
 #txtelefono{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(0, 0, 0);
     width:350px ;
     outline: none;
     margin-left: 35%;
@@ -35,7 +36,7 @@ body{
 #txnombre{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(0, 0, 0);
     width: 350px;
     outline: none;
     margin-left: 35%;
@@ -45,7 +46,7 @@ body{
 #txemail{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(0, 0, 0);
     width:350px ;
     outline: none;
     margin-left: 35%;
@@ -55,7 +56,7 @@ body{
 #txrazon{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126); 
+    border-bottom: 1px solid rgb(3, 3, 3); 
     width:350px ;
     outline: none;
     margin-left: 35%;
@@ -65,27 +66,29 @@ body{
 #txempleados{
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(0, 0, 0);
     width:350px ;
     outline: none;
     margin-left: 35%;
     width: 800px;
     padding: 20px;
     
-   
    
 }
 #txfechaF{
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgb(128, 126, 126);
+    border-bottom: 1px solid rgb(0, 0, 0);
     width:350px ;
     outline: none;
-    
+    color: rgb(14, 16, 17);
     margin-left: 35%;
     width: 800px;
     padding: 20px;
     
+}
+#txfechaF::placeholder{
+    color: rgb(104, 104, 104);
 }
 .onemainn{
     display: inline-flex;
@@ -125,7 +128,7 @@ body{
     align-items: center;
 }
 .footertx{
-    background-color: rgb(145, 147, 145);
+    background-color: hsl(120, 1%, 57%);
     border-top: none;
     text-align: center;
     margin-top: 20px;
@@ -134,10 +137,29 @@ body{
 .footertx p {
     margin: 50px;
     padding: 20px;
+    color: aliceblue;
 }
 .error{
     background-color: red !important;
 }
+#txsubmit{ 
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 5px;
+    display: block;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+#txsubmit:hover{
+    color: rgb(113, 112, 110);
+}
+
+    
+
+
+
 
 
 

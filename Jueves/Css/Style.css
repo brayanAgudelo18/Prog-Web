@@ -68,6 +68,9 @@ footer{
     padding: 5px;
     text-align: center;
 }
+.footer-tx p{
+    color: aliceblue;
+}
 #txusuario{
     background-color: transparent;
     border: none;

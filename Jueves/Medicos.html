@@ -4,8 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Css/medico.css">
+    <link rel="icon" href="imagenes html/perro.jpg" type="imagen">
+    <script type="text/javascript" src="./pruebas/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./pruebas/medicos.js"></script>
+    
 </head>
 <body>
+    <header class="veterinaria_header">
+        <div class="vet_logo_div">
+            <img src="imagenes html/logotipo-moderno-arte-linea-perro.png" alt="vet logo" class="vet_logo">
+        </div>
+    </header>
+    <main>
+        <h1>Medicos</h1>
+        <div class="main_div">
+            <div class="nav_div">
+                <nav class="pestañas">
+                    <ul class="pestañas-ul">
+                        <a class="pestaña_link" href="Inicio.html"><li class="pestaña">Inicio</li></a>
+                        <a class="pestaña_link" href="Veterinaria.html"><li class="pestaña">Veterinaria</li></a>
+                        <a class="pestaña_link" href="Medicos.html"><li class="pestaña">Medicos</li></a>
+                        <a class="pestaña_link" href="Citas.html"><li class="pestaña">Citas</li></a>
+                        <a class="pestaña_link" href="Medicamentos.html"><li class="pestaña">Medicamentos</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="form">
+                <div class="container">
+                    <div class="group">
+                      <label for="Cedula" >
+                      <input type="text" class="txCmedico" name="cedula" id="txCmedico" placeholder="cedula" onblur="validarCedula()">
+                      </label>
+                    </div>
+                    <div class="group">
+                      <label for="Nombre">
+                      <input type="text" class="txNmedico" name="nombre" id="txNmedico" placeholder="nombre" onblur=" validarNombre()">
+                      </label>
+                    </div>
+                    <div class="group">
+                      <label for="Apellido">
+                      <input type="text" class="txAmedico" name="apellido" id="txAmedico" placeholder="apellido" onblur="validarApellido()">
+                      </label>
+                    </div>
+                    <div class="group">
+                      <label for="Telefono" >   </label>
+                      <input type="text" class="txTmedico" name="txtTelefono" id="txTmedico" placeholder="Teléfono" onblur="validarTelefono()">
+                    </div>
+                    <div class="group">
+                      <label for="Direccion"></label>
+                      <input type="text" name="txDmedico" class="txDmedico" id="txDmedico" placeholder="Direccion" onblur="validarDireccion()">
+                    </div>
+                    <div class="group">
+                        <label for="Email" > </label>
+                        <input type="email" class="txEmedico" name="email" id="txEmedico" placeholder="Email" onblur="validarEmail()">
+                    </div>
+                    <div class="group">
+                        <label for="fecha de nacimiento"></label>
+                        <input type="date" name="fechadeN" id="txFNmedico" class="txFNmedico" >
+                    </div>
+                </div>
+                <div class="group"> 
+                    <h3>genero</h3>         
+                  <label for="masculino" > </label> 
+                  <input type="radio" class="txMmedico" name="masculino" id="txMmedico">Masculino    
+                </div>
+                <div class="group">
+                 <label for="date" > </label>
+                 <input type="radio" class="txFmedico" name="femenino" id="txFmedico" placeholder="Femenino">Femenino                 
+                </div>
+                <div class="formtwo">
+                    <h5>lugar de nacimiento</h5>
+                    <div class="containertwo">
+                        <div class="input-group">
+                            <label for="pais">País:</label>
+                            <select id="pais" name="pais" class="cuadro-one">
+                                <option value="colombia">Colombia</option>
+                                <option value="mexico">México</option>
+                                <option value="argentina">Argentina</option>
+                                
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="departamento">Departamento:</label>
+                            <select id="departamento" name="departamento">
+                                <option value="cundinamarca">Cundinamarca</option>
+                                <option value="antioquia">Antioquia</option>
+                                <option value="boyaca">Boyacá</option>
+                                
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="municipio">Municipio:</label>
+                            <select id="municipio" name="municipio">
+                                <option value="bogota">Bogotá</option>
+                                <option value="medellin">Medellín</option>
+                                <option value="tunja">Tunja</option>
+                               
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="submit-two">
+                    <label for=""></label>
+                    <button type="submit" class="button-one">ENVIAR</button>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    
+    </main>     
+     <footer>
+        <p> Estamos ubicados en Manizales, Caldas, Colombia.<br>
+            Universidad de Caldas. Tel: 8871500.<br>
+            <strong>Veterinaria - Santiago - 2025</strong>
+        </p>
+    </footer>
+   
     
 </body>
 </html>
