@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $('select').formSelect();
+});
+document.addEventListener('DOMContentLoaded', function(){
+    M.AutoInit();
+});
 function validarDireccion(){
     var elementoDireccion= $('#txDmedico');
     var direccion = $(elementoDireccion).val();
@@ -52,5 +58,17 @@ function validarTelefono(){
         return false;
     } 
 }
+$(document).ready(function() {
+    M.updateTextFields();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+});
+$(document).ready(function(){
+    $('select').formSelect();
+});
+  
+
 
 

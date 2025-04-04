@@ -4,108 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Css/medico.css">
     <link rel="icon" href="imagenes html/perro.jpg" type="imagen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
     <script type="text/javascript" src="./pruebas/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./Css/medico.css">
     <script type="text/javascript" src="./pruebas/medicos.js"></script>
     
 </head>
 <body>
-    <header class="veterinaria_header">
-        <div class="vet_logo_div">
-            <img src="imagenes html/logotipo-moderno-arte-linea-perro.png" alt="vet logo" class="vet_logo">
+    <nav>
+        <div id="nav-pri"  class="nav-wrapper">
+          <a href="#" class="brand-logo right">Medicos</a>
+           <ul id="nav-mobile" class="left hide-on-med-and-down">
+             <li><a href="Veterinaria.html">Veterinaria</a></li>
+             <li><a href="Index-brayan.html">Inicio</a></li>
+             <li><a href="Citas.html">citas</a></li>
+             <li><a href="Inicio.html">Index</a></li>
+             <li><a href="Medicamentos.html">Medicamentos</a></li>
+             <li><a href="Medicos.html">Medicos</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
     <main>
+        
         <h1>Medicos</h1>
         <div class="main_div">
-            <div class="nav_div">
-                <nav class="pestañas">
-                    <ul class="pestañas-ul">
-                        <a class="pestaña_link" href="Inicio.html"><li class="pestaña">Inicio</li></a>
-                        <a class="pestaña_link" href="Veterinaria.html"><li class="pestaña">Veterinaria</li></a>
-                        <a class="pestaña_link" href="Medicos.html"><li class="pestaña">Medicos</li></a>
-                        <a class="pestaña_link" href="Citas.html"><li class="pestaña">Citas</li></a>
-                        <a class="pestaña_link" href="Medicamentos.html"><li class="pestaña">Medicamentos</li></a>
-                    </ul>
-                </nav>
-            </div>
             <div class="form">
                 <div class="container">
-                    <div class="group">
-                      <label for="Cedula" >
-                      <input type="text" class="txCmedico" name="cedula" id="txCmedico" placeholder="cedula" onblur="validarCedula()">
-                      </label>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_box</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Cedula</label>
                     </div>
-                    <div class="group">
-                      <label for="Nombre">
-                      <input type="text" class="txNmedico" name="nombre" id="txNmedico" placeholder="nombre" onblur=" validarNombre()">
-                      </label>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">nombre</label>
                     </div>
-                    <div class="group">
-                      <label for="Apellido">
-                      <input type="text" class="txAmedico" name="apellido" id="txAmedico" placeholder="apellido" onblur="validarApellido()">
-                      </label>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Apellido</label>
                     </div>
-                    <div class="group">
-                      <label for="Telefono" >   </label>
-                      <input type="text" class="txTmedico" name="txtTelefono" id="txTmedico" placeholder="Teléfono" onblur="validarTelefono()">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix ">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
                     </div>
-                    <div class="group">
-                      <label for="Direccion"></label>
-                      <input type="text" name="txDmedico" class="txDmedico" id="txDmedico" placeholder="Direccion" onblur="validarDireccion()">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">contact_mail</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">email</label>
                     </div>
-                    <div class="group">
-                        <label for="Email" > </label>
-                        <input type="email" class="txEmedico" name="email" id="txEmedico" placeholder="Email" onblur="validarEmail()">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">edit_location</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">direccion</label>
                     </div>
-                    <div class="group">
-                        <label for="fecha de nacimiento"></label>
-                        <input type="date" name="fechadeN" id="txFNmedico" class="txFNmedico" >
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">person</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">fecha de nacimiento</label>
                     </div>
                 </div>
                 <div class="group"> 
                     <h3>genero</h3>         
-                  <label for="masculino" > </label> 
-                  <input type="radio" class="txMmedico" name="masculino" id="txMmedico">Masculino    
-                </div>
-                <div class="group">
-                 <label for="date" > </label>
-                 <input type="radio" class="txFmedico" name="femenino" id="txFmedico" placeholder="Femenino">Femenino                 
-                </div>
-                <div class="formtwo">
+                    <form action="#">
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" checked />
+                            <span>masculino</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" />
+                            <span>femenino</span>
+                          </label>
+                        </p>
+                    </form>
                     <h5>lugar de nacimiento</h5>
-                    <div class="containertwo">
-                        <div class="input-group">
-                            <label for="pais">País:</label>
-                            <select id="pais" name="pais" class="cuadro-one">
-                                <option value="colombia">Colombia</option>
-                                <option value="mexico">México</option>
-                                <option value="argentina">Argentina</option>
-                                
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="departamento">Departamento:</label>
-                            <select id="departamento" name="departamento">
-                                <option value="cundinamarca">Cundinamarca</option>
-                                <option value="antioquia">Antioquia</option>
-                                <option value="boyaca">Boyacá</option>
-                                
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="municipio">Municipio:</label>
-                            <select id="municipio" name="municipio">
-                                <option value="bogota">Bogotá</option>
-                                <option value="medellin">Medellín</option>
-                                <option value="tunja">Tunja</option>
-                               
-                            </select>
-                        </div>
-                        
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
                     </div>
-                </div>
+                    
+                    <div class="input-field col s12">
+                        <select multiple>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Multiple Select</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <select>
+                          <optgroup label="team 1">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                          </optgroup>
+                          <optgroup label="team 2">
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                          </optgroup>
+                        </select>
+                        <label>Optgroups</label>
+                    </div>
+                    
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" data-icon="images/sample-1.jpg">example 1</option>
+                          <option value="" data-icon="images/office.jpg">example 2</option>
+                          <option value="" data-icon="images/yuna.jpg">example 3</option>
+                        </select>
+                        <label>Images in select</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select class="icons">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+                          <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+                          <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+                        </select>
+                        <label>Images in select</label>
+                    </div>
+                    
+                      <label>Browser Select</label>
+                        <select class="browser-default">
+                         <option value="" disabled selected>Choose your option</option>
+                         <option value="1">Option 1</option>
+                         <option value="2">Option 2</option>
+                         <option value="3">Option 3</option>
+                        </select>
+                    </div>
                 <div class="submit-two">
                     <label for=""></label>
                     <button type="submit" class="button-one">ENVIAR</button>
