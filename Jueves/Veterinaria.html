@@ -8,61 +8,69 @@
     <link rel="icon" href="imagenes html/perro.jpg" type="imagen">
     <script  type = "text/javascript" src="./pruebas/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="./pruebas/veterinaria.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <script type="module" src="./js/materialize.min.js"></script>
 </head>
 <body>
-    <header class="txheader">
-        <div>
-            <img class="imgone" src="imagenes html/logotipo-moderno-arte-linea-perro.png" alt="">
-        </div>
-    </header>
+    <header>
+        <nav>
+            <div id="nav-pri"  class="nav-wrapper">
+              <a href="#" class="brand-logo right">Veterinaria</a>
+               <ul id="nav-mobile" class="left hide-on-med-and-down">
+                 <li><a href="Veterinaria.html">Veterinaria</a></li>
+                 <li><a href="Index-brayan.html">Inicio</a></li>
+                 <li><a href="Citas.html">citas</a></li>
+                 <li><a href="Inicio.html">Index</a></li>
+                 <li><a href="Medicamentos.html">Medicamentos</a></li>
+                 <li><a href="Medicos.html">Medicos</a></li>
+                </ul>
+            </div>
+        </nav>
 
+    </header>
     <main>
         <div class="onemainn">
-            <div class="clas">
-                <nav class="navmain">
-                    <ul class="ul-list">
-                        <li class="enlacess" ><a class="nav-enlace" href="Inicio.html">Inicio</a></li>
-                        <li class="enlacess" ><a class="nav-enlace" href="Veterinaria.html">Veterinaria</a></li>
-                        <li class="enlacess" ><a class="nav-enlace" href="Medicos.html">Medicos</a></li>
-                        <li class="enlacess" ><a class="nav-enlace" href="Citas.html">Citas</a></li>
-                        <li class="enlacess" ><a class="nav-enlace" href="Medicamentos.html">Medicamentos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="tx-menu">
-
-                <div>
-                    <label for="txnombre"></label>
-                    <input type="text" id="txnombre" name="txnombre" placeholder="NIT" onblur="validarNit()">
+            <div class="form">
+                <div class="container">
+                    <h1>Veterinaria</h1>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_box</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Nit</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">person</i>
+                    <input id="icon_nombre" type="text" class="validate">
+                    <label for="icon_nombre">Razon Social</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">person</i>
+                    <input id="icon_apellido" type="text" class="validate">
+                    <label for="icon_apellido">Empleados</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix ">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telephone</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">contact_mail</i>
+                    <input id="icon_email" type="text" class="validate">
+                    <label for="icon_email">email</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">edit_location</i>
+                    <input id="icon_direccion" type="text" class="validate">
+                    <label for="icon_direccion">direccion</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">person</i>
+                    <input id="icon_nacimiento" type="date" class="datepicker">
+                    <label for="icon_nacimiento"></label>
+                  </div>
                 </div>
-                <div>   
-                    <label for="txrazon"></label>
-                    <input type="text" id="txrazon" name="txrazon" placeholder="Razon Social" onblur="validarNombre()">
-                </div>
-                <div>
-                    <label for="txdireccion"></label>
-                    <input type="text" id="txdireccion" name="txdireccion" placeholder="Direccion"  onblur="validarDireccion()">
-                </div>
-                <div>
-                    <label for="txtelefono"></label>
-                    <input type="text" id="txtelefono" name="txtelefono" placeholder="Telefono" onblur="validarTelefono()">
-                </div>
-                <div>
-                    <label for="txemail"></label>
-                    <input type="text" id="txemail" name="txemail" placeholder="Email" onblur="validarEmail()">
-                </div>
-                <div>
-                    <label for="txempleados"></label>
-                    <input type="text" id="txempleados" name="txempleados" placeholder="Empleados" onblur="validarEmpleados()">
-                </div>
-                <div>
-                    <label for="txfechaF"></label>
-                    <input type="text" id="txfechaF" name="txfechaF" placeholder="mm/dd/yyyy" onblur="validarFecha()">
-                </div>
-                <div class="txsubmit">
-                    <label for="txsubmit"></label>
-                    <button type="button" id="txsubmit" name="txsubmit" onclick="guardarVeterinaria()" onblur="guardarVeterinaria()" >submit</button>
-                </div>
+              
     
             </div>
 

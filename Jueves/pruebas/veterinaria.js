@@ -84,5 +84,9 @@ function limpiarCampos(){
 function mostrarVterinaria(){
     
 }
+$(document).ready(function() {
+    M.updateTextFields();
+});
+
 
 

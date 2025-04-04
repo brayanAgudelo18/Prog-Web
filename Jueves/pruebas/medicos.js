@@ -50,7 +50,7 @@ function validarEmail(){
     } 
 }
 function validarTelefono(){
-    var elementoTelefono= $('#txTmedico');
+    var elementoTelefono= $('#icon_telephone');
     var telefono = $(elementoTelefono).val();
      var expReg = /^(\(\d{3}\)\s?|\d{3}[\s\-]?)\d{3}[\s\-]?\d{4}$/;
     if(telefono.length == 0 || !expReg.test(telefono)) {

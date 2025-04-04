@@ -128,7 +128,7 @@ body{
     align-items: center;
 }
 .footertx{
-    background-color: hsl(120, 1%, 57%);
+    background-color: hsl(0, 0%, 0%);
     border-top: none;
     text-align: center;
     margin-top: 20px;
@@ -154,6 +154,15 @@ body{
 }
 #txsubmit:hover{
     color: rgb(113, 112, 110);
+}
+.form{
+    width:500px ;
+    margin-left: 35%;
+    width: 1000px;
+    padding: 20px;
+}
+#nav-pri{
+    background-color: black;
 }
 
     

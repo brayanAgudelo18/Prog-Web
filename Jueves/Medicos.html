@@ -14,98 +14,100 @@
     
 </head>
 <body>
+  <header>
     <nav>
-        <div id="nav-pri"  class="nav-wrapper">
-          <a href="#" class="brand-logo right">Medicos</a>
-           <ul id="nav-mobile" class="left hide-on-med-and-down">
-             <li><a href="Veterinaria.html">Veterinaria</a></li>
-             <li><a href="Index-brayan.html">Inicio</a></li>
-             <li><a href="Citas.html">citas</a></li>
-             <li><a href="Inicio.html">Index</a></li>
-             <li><a href="Medicamentos.html">Medicamentos</a></li>
-             <li><a href="Medicos.html">Medicos</a></li>
-            </ul>
-        </div>
-    </nav>
+      <div id="nav-pri"  class="nav-wrapper">
+        <a href="#" class="brand-logo right">Medicos</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="Veterinaria.html">Veterinaria</a></li>
+          <li><a href="Index-brayan.html">Inicio</a></li>
+          <li><a href="Citas.html">citas</a></li>
+          <li><a href="Inicio.html">Index</a></li>
+          <li><a href="Medicamentos.html">Medicamentos</a></li>
+          <li><a href="Medicos.html">Medicos</a></li>
+        </ul>
+      </div>
+   </nav>
+</header>
     <main>
         
-        <h1>Medicos</h1>
-        <div class="main_div">
-            <div class="form">
-                <div class="container">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_box</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Cedula</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">person</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">nombre</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">person</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Apellido</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix ">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Telephone</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">contact_mail</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">email</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">edit_location</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">direccion</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">person</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">fecha de nacimiento</label>
-                    </div>
-                </div>
-                <div class="group"> 
-                    <h3>genero</h3>         
-                    <form action="#">
-                        <p>
-                          <label>
-                            <input name="group1" type="radio" checked />
-                            <span>masculino</span>
-                          </label>
-                        </p>
-                        <p>
-                          <label>
-                            <input name="group1" type="radio" />
-                            <span>femenino</span>
-                          </label>
-                        </p>
-                    </form>
-                    <h5>lugar de nacimiento</h5>
-                    <div class="input-field col s12">
-                        <select>
-                          <option value="" disabled selected>Choose your option</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
-                        </select>
-                        <label>Materialize Select</label>
-                    </div>
-                    
-                    <div class="input-field col s12">
-                        <select multiple>
-                          <option value="" disabled selected>Choose your option</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
-                        </select>
-                        <label>Materialize Multiple Select</label>
-                    </div>
-                    
+      <h1>Medicos</h1>
+      <div class="main_div">
+        <div class="form">
+          <div class="container">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_box</i>
+              <input id="icon_prefix" type="text" class="validate" >
+              <label for="icon_prefix">Cedula</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input id="icon_nombre" type="text" class="validate">
+              <label for="icon_nombre">nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input id="icon_apellido" type="text" class="validate">
+              <label for="icon_apellido">Apellido</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix ">phone</i>
+              <input id="icon_telephone"  type="tel" class="validate" onblur="validarTelefono()">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">contact_mail</i>
+              <input id="icon_email" type="text" class="validate">
+              <label for="icon_email">email</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">edit_location</i>
+              <input id="icon_direccion" type="text" class="validate">
+              <label for="icon_direccion">direccion</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input id="icon_nacimiento" type="date" class="datepicker">
+              <label for="icon_nacimiento"></label>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="group"> 
+              <h3>genero</h3>         
+              <form action="#">
+                <p>
+                  <label>
+                    <input name="group1" type="radio" checked />
+                    <span>masculino</span>
+                    </label>
+                </p>
+                <p>
+                  <label>
+                  <input name="group1" type="radio" />
+                  <span>femenino</span>
+                  </label>
+                </p>
+              </form>
+              <h5>lugar de nacimiento</h5>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                    <label>Materialize Select</label>
+              </div>    
+              <div class="input-field col s12">
+                <select multiple>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Multiple Select</label>
+             </div>     
                     <div class="input-field col s12">
                         <select>
                           <optgroup label="team 1">
@@ -119,43 +121,40 @@
                         </select>
                         <label>Optgroups</label>
                     </div>
-                    
                     <div class="input-field col s12 m6">
-                        <select class="icons">
-                          <option value="" disabled selected>Choose your option</option>
-                          <option value="" data-icon="images/sample-1.jpg">example 1</option>
-                          <option value="" data-icon="images/office.jpg">example 2</option>
-                          <option value="" data-icon="images/yuna.jpg">example 3</option>
-                        </select>
-                        <label>Images in select</label>
+                      <select class="icons">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" data-icon="images/sample-1.jpg">example 1</option>
+                        <option value="" data-icon="images/office.jpg">example 2</option>
+                        <option value="" data-icon="images/yuna.jpg">example 3</option>
+                      </select>
+                      <label>Images in select</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <select class="icons">
-                          <option value="" disabled selected>Choose your option</option>
-                          <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
-                          <option value="" data-icon="images/office.jpg" class="left">example 2</option>
-                          <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
-                        </select>
-                        <label>Images in select</label>
+                      <select class="icons">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+                        <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+                        <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+                      </select>
+                      <label>Images in select</label>
                     </div>
-                    
                       <label>Browser Select</label>
-                        <select class="browser-default">
-                         <option value="" disabled selected>Choose your option</option>
-                         <option value="1">Option 1</option>
-                         <option value="2">Option 2</option>
-                         <option value="3">Option 3</option>
-                        </select>
+                      <select class="browser-default">
+                       <option value="" disabled selected>Choose your option</option>
+                       <option value="1">Option 1</option>
+                       <option value="2">Option 2</option>
+                       <option value="3">Option 3</option>
+                      </select>
                     </div>
-                <div class="submit-two">
-                    <label for=""></label>
-                    <button type="submit" class="button-one">ENVIAR</button>
+                    <div class="submit-two">
+                      <label for=""></label>
+                      <button type="submit" class="button-one">ENVIAR</button>
+                    </div>
+                
                 </div>
-                
-                
-            </div>
             
-        </div>
+      </div>
     
     </main>     
      <footer>
