@@ -87,6 +87,74 @@ function mostrarVterinaria(){
 $(document).ready(function() {
     M.updateTextFields();
 });
+function guardarVeterinaria(){
+    var veterinaria = new Object();
+    veterinaria.nombre = $('#txtRazon').val();
+    veterinaria.direccion = $('#txtDireccion').val();
+    veterinaria.telefono = $('#txtTelefono').val();
+    veterinaria.nit = $('#txtNit').val();
 
+    mostrarModal(veterinaria);
 
+    veterinarias.push(veterinaria);
+    veterinariasJson = JSON.stringify(veterinarias);
+    localStorage.setItem('veterinarias', veterinariasJson);
 
+    mostrarVeterinaria();
+    limpiarCampos();
+}
+
+function limpiarCampos(){
+    $('#txtRazon').val('');
+    $('#txtDireccion').val('');
+    $('#txtTelefono').val('');
+    $('#txtNit').val('');
+}
+
+function mostrarVeterinaria(){
+    var tabla = $('#tblVeterinarias');
+    $(tabla).html('');
+    var datos = '<table border="1"><tr><th>Nombre</th><th>Dirección</th>';
+    datos += '<th>Teléfono</th><th>NIT</th><th>Accion</th></tr>';
+
+    for(var i = 0; i < veterinarias.length; i++){
+        datos += '<tr>';
+        datos += '<td>' + veterinarias[i].nombre + '</td>';
+        datos += '<td>' + veterinarias[i].direccion + '</td>';
+        datos += '<td>' + veterinarias[i].telefono + '</td>';
+        datos += '<td>' + veterinarias[i].nit + '</td>';
+        datos += '<td><a href="#" onclick=eliminar(' + veterinarias[i].nit + ')>Eliminar</a></td>';
+        datos += '</tr>';
+    }
+
+    datos += '</table>';
+    $(tabla).append(datos);
+}
+
+function mostrarModal(vet){
+    var modal = $('.modal-content p');
+    var datos = '<ul>';
+    datos += '<li><b>Nit: </b>' + vet.nit + '</li>';
+    datos += '<li><b>Razon Social: </b>' + vet.nombre + '</li>';
+    datos += '<li><b>Direccion: </b>' + vet.direccion + '</li>';
+    datos += '<li><b>Telefono: </b>' + vet.telefono + '</li>';
+    datos += '</ul>';
+
+    $(modal).html(datos);
+    $('#modalVeterinaria').modal('open');
+}
+
+function eliminar(nit){
+    var veterinariasJson = localStorage.getItem('veterinarias');
+    veterinarias = JSON.parse(veterinariasJson);
+    for(var i = 0; i < veterinarias.length; i++){
+        if(veterinarias[i].nit == nit){
+            veterinarias.splice(i, 1);
+            break;
+        }
+    }
+    veterinariasJson = JSON.stringify(veterinarias);
+    localStorage.setItem('veterinarias', veterinariasJson);
+    mostrarVeterinaria();
+
+}
